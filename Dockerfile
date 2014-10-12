@@ -13,6 +13,4 @@ RUN rm -rf /etc/nginx/conf.d/*.conf
 ADD conf/website.conf /etc/nginx/conf.d/website.conf
 ADD conf/nginx.conf /etc/nginx/nginx.conf
 
-RUN service nginx stop
-
 ENTRYPOINT ["/usr/sbin/nginx"]
